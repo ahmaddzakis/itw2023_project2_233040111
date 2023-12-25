@@ -1,7 +1,55 @@
 body {
-  min-height: 3000px;
+  font-family: 'Afacad', Arial, Helvetica, sans-serif;
+}
+
+.nav-item {
+  transition: all 0.1s;
+  position: relative;
+}
+
+.nav-item::after {
+  opacity: 0;
+  transition: all 0.2s;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-item:hover::after {
+  opacity: 1;
 }
 
 .jumbotron {
-  background-color: #fff78a;
+  padding-top: 6rem;
+  background-color: #00ffff;
+}
+
+#services {
+  background-color: #00ffff;
+}
+
+.card {
+  transition: all 0.3s;
+  box-shadow: 2px 2px 2px #39bbbb;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px #39bbbb;
+}
+
+#order {
+  background-color: #00ffff;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+footer {
+  background-color: #00ffff;
 }
