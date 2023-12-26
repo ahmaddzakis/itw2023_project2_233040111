@@ -1,5 +1,6 @@
 body {
   font-family: 'Afacad', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .nav-item {
